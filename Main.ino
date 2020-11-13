@@ -33,7 +33,7 @@ void loop() {
   if (digitalRead(switch_pin) == HIGH) {
     servoPosition = 10;
     myservo.write(servoPosition);              // tell servo to go to position in variable "servoPosition"
-    if (sensorValue < 100) {
+    if (sensorValue < 300) {
       gameOfThrones();
     }
   }
